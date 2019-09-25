@@ -19,6 +19,12 @@
     <module>example-spark-job</module>
   </modules>
 
+
+  <!--
+  All of the subsequent code would actually live in our shared parent pom
+  rather than inside of each project
+  -->
+
   <build>
     <pluginManagement>
       <plugins>
