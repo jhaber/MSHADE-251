@@ -8,24 +8,18 @@
     <version>25</version>
   </parent>
 
-  <groupId>com.example</groupId>
-  <artifactId>example-root</artifactId>
+  <groupId>root</groupId>
+  <artifactId>root</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <modules>
-    <module>example-library</module>
-    <module>example-rest-api</module>
-    <module>example-spark-job</module>
-  </modules>
+  <properties>
+    <basepom.check.skip-license>true</basepom.check.skip-license>
+    <basepom.check.skip-coverage>true</basepom.check.skip-coverage>
+  </properties>
 
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>com.example</groupId>
-        <artifactId>example-library</artifactId>
-        <version>${project.version}</version>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
+  <modules>
+    <module>example-project</module>
+    <module>packaging-plugin</module>
+  </modules>
 </project>
